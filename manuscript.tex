@@ -1,0 +1,128 @@
+\documentclass[11pt, a4paper, reqno]{amsart}
+
+%---- Packages ----%
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{amsmath, mathtools, amsthm}
+\usepackage{amssymb,url,xspace}
+\usepackage[mathscr]{eucal}
+\usepackage{graphicx}
+\usepackage[outercaption]{sidecap} 
+\usepackage{subfigure}
+\usepackage{bm}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{cases}
+\usepackage[hidelinks]{hyperref}
+\usepackage{cleveref}
+\usepackage{tikz}
+\usepackage{verbatim}
+\usetikzlibrary{matrix}
+\usepackage{xfrac}
+
+
+
+\usepackage[outercaption]{sidecap} 
+
+\usepackage{subfigure}
+\usepackage{enumitem}
+\usepackage{multirow}
+\usepackage[ruled,vlined]{algorithm2e}
+\usetikzlibrary{positioning,decorations.pathreplacing}
+\usepackage[square]{natbib} % <- new
+
+% Colors
+\definecolor{dukeblue}{rgb}{0.0, 0.0, 0.61}
+
+\hypersetup{
+	colorlinks,
+	citecolor=dukeblue,
+	filecolor=black,
+	linkcolor=dukeblue,
+	urlcolor=black
+}
+%\usepackage{refcheck}
+\usepackage{empheq}
+
+\usepackage[svgnames,pdf]{pstricks}
+\usepackage{anysize}
+\marginsize{3.25cm}{3.25cm}{4cm}{3.5cm}
+%---- Macros ----%
+
+\newcommand{\one}{\mathbf{1}}
+\newcommand{\diff}{\, \mathrm{d}}
+
+\newcommand{\del}{\partial}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\R}{\mathbb{R}}
+
+% Bold letters
+\def\*#1{\mathbf{#1}}
+
+%\newcommand*{\Scale}[2][4]{\scalebox{#1}{$#2$}
+
+\theoremstyle{plain}
+\numberwithin{equation}{section}
+\newtheorem{remark}{Remark}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{question}{Question}[section]
+\newtheorem{example}{Example}[section]
+\newtheorem{assumption}{Assumption}
+
+\renewcommand{\theenumi}{\roman{enumi}}
+
+
+%---- Title ----%
+
+	\title 
+	[Paper Title]{Paper Title}
+	
+	\author{Borjan Geshkovski}	
+	\thanks{}
+		
+\date{\today}
+
+
+%---- Content ----%
+
+\begin{document}
+	
+		\begin{abstract}
+		\end{abstract}
+			
+	\maketitle	
+	
+	\setcounter{tocdepth}{1}
+	
+	\tableofcontents
+	
+	{\small {\bf Keywords.} }
+
+	{\small {\href{https://mathscinet.ams.org/msc/msc2010.html}{{\bf 	\color{dukeblue}{AMS Subject Classification}}}}. }
+	
+\section{Introduction}
+	
+		
+%\bibliographystyle{acm}
+%\bibliography{refs}{}
+	
+\bigskip
+
+\begin{minipage}{.5\textwidth}
+  {\bf Borjan Geshkovski}\par
+  Department of Mathematics\par
+  Massachusetts Institute of Technology\par
+  Simons Building, Room 241\par
+  77 Massachusetts Avenue\par
+  Cambridge\par
+  MA\par
+  02139-4307 USA\par
+  e-mail: \href{mailto:borjan@mit.edu}{\textcolor{dukeblue}{\texttt{borjan@mit.edu}}}
+\end{minipage}% This must go next to `\end{minipage}`
+\begin{minipage}{.5\textwidth}
+\end{minipage} 
+		
+\end{document} 
